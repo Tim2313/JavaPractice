@@ -17,5 +17,3 @@ fi
 javac -d ./build $1
 
 java -cp "./build" $2 "$3"
-
-
