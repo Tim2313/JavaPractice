@@ -1,13 +1,19 @@
+import java.util.Scanner;
+
 public class KvadratCalculator {
-	public static void main(String[] args) {
-		
+
+	public static void main(String[] args) throws java.io.IOException {
+		int maghelp = args.length;
+
 		System.out.println("Програма вирішує квадратні рівняння");
 		System.out.println("ax^2 + bx + c = 0");
 		System.out.println("Будь ласка введіть a, b, c: ");
-		
-		double a = 2;
-		double b = -30; 
-		double c = 0;
+
+		Scanner scanner = new Scanner(System.in);
+
+		double a = scanner.nextDouble();
+		double b = scanner.nextDouble(); 
+		double c = scanner.nextDouble();
 
 		double D = b * b - 4 * a * c;
 		
