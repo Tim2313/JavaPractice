@@ -1,0 +1,81 @@
+
+
+
+
+
+
+
+
+Feature: Stack
+    Background:
+        Given developer Tim
+
+    #1
+    Scenario: Create new Stack
+        Given Tim wants to create new Stack
+        When Tim creates the Stack
+        Then the Stack is created
+            And the Stack is empty
+            And the Stack has size 10
+    #2
+    Scenario: Add new elem to the Stack
+        Given the Stack is created
+            And Tim wants to add new elem to the Stack
+        When Tim adds new elem to the Stack
+        Then elem is added
+            And elem on the top of the Stack
+            And the Stack is not empty
+    #3
+
+    Scenario: Create new array with specific 4 commands
+        Given: an empty array
+            And place of first elem
+            And size of array
+        When Tim choses size it is 10
+        Then size of empty array is 10
+        When Tim add one element to array
+        Then elem is added
+            And place of first elem is increase
+        When Tim deletes first elem
+        Then first elem is deleted
+            And place of first elem is decreased
+        When Tim looks at first elem
+        Then first elem is showed
+            And elem which was shown come back to his place in array
+        When Tim checks is the array is filled
+        Then he sees 'Array is filled' if array is filled
+            And if it empty 'Array is not filled'
+
+
+        _________________________________________________________________________
+
+        CABLE - оптоволкно / DSL / витая пара(ethernet)
+
+        Global Network <->
+         cable <->
+          ethernet wire <->
+           ethernet input <->
+            network card(mother board) <->
+             driver <->
+              OC(operation system) <->
+               Socket (win32_API/POSIX_API) <->
+                user.
+
+
+//сокращенный вид
+        Global Network <->
+         (low level)... <->
+          Sockets(OC) <->
+           (high level)... <->
+            User
+
+
+
+
+
+
+
+
+
+
+

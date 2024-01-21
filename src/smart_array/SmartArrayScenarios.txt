@@ -1,0 +1,11 @@
+
+
+
+
+
+Feature: Smart Array
+    Background:
+        Given customer Timmy
+
+    #1
+    Scenario
